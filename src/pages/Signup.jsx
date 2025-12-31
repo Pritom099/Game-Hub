@@ -5,7 +5,7 @@ import { Link } from 'react-router';
 const Signup = () => {
     return (
         <MyContainer>
-            <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-10 p-6 lg:p-10 text-white">
+            <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-10 p-6 lg:p-10 text-white mx-25">
                 <div className="max-w-lg text-center lg:text-left">
                     <h1 className="text-5xl font-extrabold drop-shadow-lg">
                         Create Your Account

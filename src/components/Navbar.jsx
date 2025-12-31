@@ -2,6 +2,7 @@ import React from 'react';
 import { IoGameControllerOutline } from 'react-icons/io5';
 import MyContainer from './MyContainer';
 import { Link } from 'react-router';
+import MyLink from './MyLink';
 
 const Navbar = () => {
     return (
@@ -14,26 +15,27 @@ const Navbar = () => {
                     <ul
                         tabIndex="-1"
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow font-semibold">
-                        <li><a>Home</a></li>
-                        <li><a>Browse</a></li>
-                        <li><a>About</a></li>
+                        <li><MyLink to={"/"}>Home</MyLink></li>
+                        <li><MyLink to={"/browse"}>Browse</MyLink></li>
+                        <li><MyLink to={"/about"}>About</MyLink></li>
                     </ul>
                 </div>
                 <div className='flex items-center md:ml-6'>
                     <IoGameControllerOutline size={30} />
                     <a className="btn btn-ghost text-2xl new-btn">GameHub</a>
                 </div>
-                
+
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 font-semibold">
-                    <li><a>Home</a></li>
-                    <li><a>Browse</a></li>
-                    <li><a>About</a></li>
+                    <li><MyLink to={"/"}>Home</MyLink></li>
+                    <li><MyLink to={"/browse"}>Browse</MyLink></li>
+                    <li><MyLink to={"/about"}>About</MyLink></li>
+
                 </ul>
             </div>
             <div className="navbar-end gap-4 md:mr-13">
-                <Link to={'/signin'} className='btn bg-white text-black p-4 rounded-xl font-bold'>Signin</Link>
+                <Link to={'/signin'} className='btn bg-white text-black p-4 rounded-xl font-bold'>Login</Link>
                 <Link to={'/signup'} className='btn bg-white text-black p-4 rounded-xl font-bold'>Register</Link>
             </div>
         </MyContainer>

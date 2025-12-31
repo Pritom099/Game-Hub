@@ -30,7 +30,7 @@ const Footer = () => {
                     <p>Cookie Policy</p>
                 </div>
             </div>
-            <div className='text-center mt-4 border-b border-gray-700 p-7'>
+            <div className='text-center mt-4 p-7'>
                 <p>© 2026 GameHub. All rights reserved.</p>
             </div>
         </MyContainer>

@@ -5,8 +5,8 @@ import { Link } from 'react-router';
 const Signin = () => {
     return (
         <MyContainer>
-            <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-10 p-6 lg:p-10 text-white">
-                <div className="max-w-lg text-center lg:text-left">
+            <div className="relative z-10 flex flex-col md:flex-row items-center justify-between mx-25 gap-10 p-6 lg:p-10 text-white">
+                <div className="max-w-lg text-center md:text-left">
                     <h1 className="text-5xl font-extrabold drop-shadow-lg">
                         Welcome Back
                     </h1>
