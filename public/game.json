@@ -1,0 +1,202 @@
+[
+  {
+    "id": "1",
+    "title": "Player Unknowns Battle Ground: PUBG",
+    "coverPhoto": "https://images.unsplash.com/photo-1606112219348-204d7d8b94ee",
+    "category": "FPS",
+    "downloadLink": "https://www.pubgmobile.com/en-US/home.shtml",
+    "description": "PUBG Mobile delivers the thrill of survival in massive open arenas where every match tells a different story. Players drop onto a vast map with nothing but determination and quickly scavenge weapons, vehicles, and resources to outlast opponents. Every decision matters, whether choosing the safest route inside the shrinking zone or risking a dangerous firefight to secure better loot. The game rewards strategy, awareness, and teamwork as much as raw shooting skill. Whether playing solo, duo, or in squads, communication and planning create intense, memorable battles. Frequent updates introduce new maps, modes, and themed events, keeping gameplay fresh and competitive. Visuals are optimized for mobile devices without sacrificing detail, showcasing realistic environments, weather effects, and weapon mechanics. Ranked modes challenge players to climb the leaderboard while casual modes allow relaxed experimentation. Customizable controls, training grounds, and balanced matchmaking help both beginners and veterans improve steadily. With a global community, seasonal rewards, and deeply engaging mechanics, PUBG Mobile remains one of the most immersive battle royale experiences available today.",
+    "ratings": "4.5",
+    "developer": "Krafton"
+  },
+  {
+    "id": "2",
+    "title": "Shadow Strike Ops",
+    "coverPhoto": "https://images.unsplash.com/photo-1525182008055-f88b95ff7980",
+    "category": "Stealth Shooter",
+    "downloadLink": "https://example.com/shadow-strike",
+    "description": "Shadow Strike Ops places players in the role of an elite operative trained to complete missions where failure is not an option. Instead of rushing into battles, players must observe movement patterns, plan routes, and strike silently to avoid detection. Each level is designed with multiple entry points, hidden paths, and environmental tools that reward creativity. Gadgets such as drones, silencers, EMP devices, and tracking sensors add tactical depth while keeping gameplay approachable. Enemies respond intelligently, calling reinforcements or sweeping areas when they notice suspicious activity. The story unfolds through cinematic cutscenes and mission reports, slowly revealing a conspiracy involving rogue agents and powerful corporations. Progression unlocks new abilities, gear upgrades, and cosmetic customization. The atmospheric sound design emphasizes tension while the graphics create realistic nighttime environments filled with shadows, reflections, and neon lights. Weekly challenge missions encourage replayability by offering rare gear and leaderboard competition. Whether players prefer ghost-like stealth or carefully planned ambushes, Shadow Strike Ops delivers a polished, thoughtful stealth experience that rewards patience and precision over reckless aggression.",
+    "ratings": "4.4",
+    "developer": "Nightfall Interactive"
+  },
+  {
+    "id": "3",
+    "title": "Galactic Frontier",
+    "coverPhoto": "https://images.unsplash.com/photo-1517976487492-5750f3195933",
+    "category": "Sci-Fi Adventure",
+    "downloadLink": "https://example.com/galactic-frontier",
+    "description": "Galactic Frontier invites players to explore a vast universe filled with mysterious planets, alien civilizations, and dangerous anomalies. As captain of a customizable starship, players choose how to shape their journey: trade peacefully, join interstellar alliances, or become feared space pirates. Every planet offers unique ecosystems, resources, and story events. Crew members each have personalities, strengths, and conflicts that influence missions and morale. Tactical space combat requires careful energy management, positioning, and weapon selection rather than simple button mashing. Research systems allow players to unlock advanced technology, new ship modules, and upgraded exploration tools. Moral choices in story missions carry long-term consequences, altering alliances and unlocking branching endings. The soundtrack and visual style evoke the sense of wonder associated with classic science-fiction adventures. Random encounters and procedurally generated side-missions ensure no two playthroughs feel identical. Cooperative multiplayer allows friends to share ships, divide roles, and tackle large-scale missions together. Galactic Frontier blends narrative depth, exploration freedom, and strategic combat into an ambitious, immersive space adventure.",
+    "ratings": "4.6",
+    "developer": "Starforge Studios"
+  },
+  {
+    "id": "4",
+    "title": "Racing Horizon Legends",
+    "coverPhoto": "https://images.unsplash.com/photo-1503376780353-7e6692767b70",
+    "category": "Racing",
+    "downloadLink": "https://example.com/racing-horizon",
+    "description": "Racing Horizon Legends captures the excitement of high-speed street racing with realistic handling and visually stunning city environments. Players begin with modest vehicles and progress through tournaments, time trials, and rival challenges to unlock legendary cars inspired by real-world performance machines. Each vehicle offers deep customization, including engine tuning, body kits, suspension adjustments, and cosmetic paint designs. Tracks feature dynamic weather, traffic, and shortcut routes that reward practice and risky decision-making. The career story follows a rising driver competing against a network of underground racers, each with unique personalities and signature cars. Online multiplayer leagues allow players to compete in seasonal ladders, team clubs, and weekly events with global rankings. The physics strike a balance between arcade fun and believable momentum, encouraging skillful drifting and clean cornering. Photo mode, replay tools, and detailed garage showcases invite players to display their collections. With frequent updates adding new tracks, challenges, and limited-time cars, Racing Horizon Legends provides endless motivation to improve lap times and dominate the streets.",
+    "ratings": "4.7",
+    "developer": "Velocity Games"
+  },
+  {
+    "id": "5",
+    "title": "Kingdom of Valor",
+    "coverPhoto": "https://images.unsplash.com/photo-1511512578047-dfb367046420",
+    "category": "Fantasy RPG",
+    "downloadLink": "https://example.com/kingdom-valor",
+    "description": "Kingdom of Valor transports players into a richly detailed medieval world threatened by invading armies and ancient dark magic. As a rising hero, players recruit companions, forge alliances, and uncover secrets hidden within castles, forests, and forgotten ruins. The combat system blends real-time action with tactical abilities, allowing players to pause briefly to issue commands or activate powerful spells. Crafting and resource gathering support weapon upgrades, armor forging, and potion brewing that meaningfully impact battles. Choices made during quests influence faction loyalty, companion relationships, and narrative outcomes. Each region is filled with side missions, puzzles, and lore scrolls that deepen the world’s history. Boss encounters challenge players to study attack patterns, adapt strategies, and coordinate party abilities. Vibrant orchestral music and impressive environmental art create a cinematic atmosphere throughout the journey. Optional co-op raids introduce large-scale encounters requiring teamwork and role specialization. Kingdom of Valor caters equally to explorers, storytellers, and combat enthusiasts, offering a long, rewarding RPG adventure with evolving stakes and memorable characters.",
+    "ratings": "4.8",
+    "developer": "Emerald Forge"
+  },
+  {
+    "id": "6",
+    "title": "Cyber Grid Tactics",
+    "coverPhoto": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31",
+    "category": "Strategy",
+    "downloadLink": "https://example.com/cyber-grid",
+    "description": "Cyber Grid Tactics takes place in a neon-lit future where corporations wage silent wars using squads of elite cyber-enhanced agents. Players command small teams across grid-based battlefields, using positioning, cover, and skill timing to defeat stronger foes through superior planning. Each agent class specializes in hacking, suppression, support, or heavy assault, and upgrades unlock branching ability trees. Missions include hostage rescues, data extractions, sabotage operations, and complex multi-phase encounters. Enemy AI adapts to repeated tactics, pushing players to continually experiment. Between missions, a strategic headquarters layer lets players research upgrades, negotiate contracts, and train agents while dealing with political consequences. The clean visual style highlights clarity and tactical readability without sacrificing atmosphere. Sound effects emphasize precision rather than chaos, reinforcing the sense that every move counts. Challenge modes and permadeath options provide extra intensity for players seeking long-term campaign stakes. Cyber Grid Tactics successfully merges tactical depth with engaging storytelling, making each carefully executed victory feel earned and meaningful.",
+    "ratings": "4.3",
+    "developer": "Neon Forge"
+  },
+  {
+    "id": "7",
+    "title": "Island Survival Craft",
+    "coverPhoto": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+    "category": "Survival",
+    "downloadLink": "https://example.com/island-survival",
+    "description": "Island Survival Craft challenges players to endure life on a remote tropical island after a mysterious shipwreck. Food, shelter, and tools must be crafted from natural resources such as wood, stone, plants, and animal materials. Weather cycles bring storms, heat waves, and cold nights that require preparation and creativity. The island hides secrets including ancient ruins, hidden caves, and wildlife that can be both helpful and dangerous. A detailed crafting system lets players build rafts, traps, water collectors, and fortified bases. Hunger, thirst, and stamina systems add realism without becoming overwhelming. Exploration rewards curiosity with rare materials and story fragments that explain the island’s strange history. Optional cooperative mode allows friends to divide tasks and build communities together. Players can choose peaceful resource gathering or risky expeditions deeper inland. Over time, small victories—like securing a stable food supply—feel incredibly satisfying. Island Survival Craft emphasizes patience, planning, and resilience, turning each day into a meaningful step toward mastering nature and uncovering the truth behind the wreck.",
+    "ratings": "4.2",
+    "developer": "OceanLeaf Studio"
+  },
+  {
+    "id": "8",
+    "title": "Street Brawler Reborn",
+    "coverPhoto": "https://images.unsplash.com/photo-1511512578047-dfb367046420",
+    "category": "Beat 'em Up",
+    "downloadLink": "https://example.com/street-brawler",
+    "description": "Street Brawler Reborn revitalizes classic arcade fighting with modern controls, combo depth, and cooperative play. Players choose from a roster of diverse fighters, each with unique backstories, special moves, and upgradeable skill paths. Levels are packed with destructible objects, environmental hazards, and cinematic boss encounters that require timing and pattern recognition. The combat encourages juggling enemies, dodging, blocking, and chaining abilities into stylish finishers. A campaign storyline follows a city overtaken by corrupt gangs and corporate enforcers, giving purpose to every street fight. Local and online co-op allow friends to coordinate roles, revive each other, and combine super attacks for massive damage. Challenge towers and endless survival modes add replay value for competitive players. The art style blends hand-drawn animation with bold neon highlights, creating a nostalgic yet fresh visual identity. Frequent seasonal events introduce limited-time fighters and cosmetic rewards. Street Brawler Reborn celebrates the spirit of classic beat ’em ups while offering enough systems and polish to engage modern audiences.",
+    "ratings": "4.1",
+    "developer": "RetroPulse"
+  },
+  {
+    "id": "9",
+    "title": "Mystic Puzzle Journey",
+    "coverPhoto": "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
+    "category": "Puzzle",
+    "downloadLink": "https://example.com/mystic-puzzle",
+    "description": "Mystic Puzzle Journey combines relaxing match-based gameplay with an enchanting story about restoring balance to a magical world. Players solve puzzles to channel elemental energies, unlocking new areas and meeting whimsical characters who offer quests and lore. Each puzzle introduces mechanics gradually, encouraging thoughtful experimentation rather than rushing. Power-ups are earned through skillful play and strategic chain reactions rather than random luck. The narrative unfolds through beautifully illustrated scenes and gentle voiceovers, creating a calming yet engaging experience. Daily challenges, seasonal events, and collectible artifacts provide long-term goals for dedicated players. Accessibility options include color-blind modes, adjustable difficulty, and optional hints. The soundtrack uses soft piano melodies and ambient nature sounds to support focus. Unlike many puzzle games, Mystic Puzzle Journey avoids aggressive monetization, allowing players to progress naturally. It’s ideal for short sessions during breaks or extended evening play, offering a mindful escape full of charm and quiet satisfaction.",
+    "ratings": "4.6",
+    "developer": "Aurora Play"
+  },
+  {
+    "id": "10",
+    "title": "Urban Builder Tycoon",
+    "coverPhoto": "https://images.unsplash.com/photo-1525182008055-f88b95ff7980",
+    "category": "Simulation",
+    "downloadLink": "https://example.com/urban-builder",
+    "description": "Urban Builder Tycoon gives players complete control over designing and managing a growing city. Starting with a small budget and a few zoning tools, players must balance housing, industry, public services, and transportation while keeping citizens satisfied. Each decision influences traffic flow, pollution, employment, and happiness. Detailed statistics dashboards reveal strengths and weaknesses, encouraging thoughtful planning instead of guesswork. Disasters and unexpected events—such as power shortages or economic downturns—test adaptability. Players can redesign neighborhoods, experiment with renewable energy, and prioritize green public spaces. The flexible building system allows creativity, letting cities take unique shapes and personalities. As the metropolis grows, advanced infrastructure unlocks including metro systems, research centers, and high-tech districts. Sandbox mode offers limitless building without financial constraints, while campaign scenarios introduce specific goals and challenges. Urban Builder Tycoon appeals to both casual players and hardcore simulation fans who enjoy seeing long-term strategies gradually transform small towns into thriving megacities.",
+    "ratings": "4.5",
+    "developer": "Civic Labs"
+  },
+  {
+    "id": "11",
+    "title": "Ancient Ruins Explorer",
+    "coverPhoto": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    "category": "Adventure",
+    "downloadLink": "https://example.com/ancient-ruins",
+    "description": "Ancient Ruins Explorer follows an archaeologist traveling across deserts, jungles, and forgotten temples in search of artifacts tied to a lost civilization. Gameplay blends platforming, environmental puzzles, and light combat as players decipher inscriptions, repair mechanisms, and avoid traps set centuries earlier. Every location contains optional side chambers with rewards for thorough exploration. The narrative reveals journal entries and voice-acted discoveries that slowly connect myths to historical truths. Tools such as grappling hooks, torches, and scanners unlock new routes in previously visited areas, creating satisfying backtracking moments. Rather than rushing, the game encourages observation: hidden switches, crumbling ledges, and faint symbols often hold the key to progress. The art direction emphasizes weathered stone, lush foliage, and dramatic lighting that adds mystery to every expedition. Subtle moral choices determine how artifacts are handled—preserved, sold, or protected—leading to multiple endings. Ancient Ruins Explorer offers a thoughtful balance of adventure, puzzle-solving, and storytelling for players who love uncovering secrets piece by piece.",
+    "ratings": "4.4",
+    "developer": "Sandspark Studios"
+  },
+  {
+    "id": "12",
+    "title": "Battlefield Mechs Online",
+    "coverPhoto": "https://images.unsplash.com/photo-1517976487492-5750f3195933",
+    "category": "Action",
+    "downloadLink": "https://example.com/mechs-online",
+    "description": "Battlefield Mechs Online drops players into towering war machines across vast industrial battlegrounds. Each mech class—light scout, balanced assault, or heavy titan—handles differently and encourages unique playstyles. Custom loadouts allow players to equip cannons, missiles, shields, and support drones, tailoring strategies for team-based matches. Objectives range from territory control to escort missions that require coordination rather than mindless shooting. Destructible environments mean cover rarely lasts, adding tension to positioning decisions. Progression unlocks cosmetic skins and performance tweaks without creating unfair pay-to-win systems. Matchmaking pairs players of similar experience, making competitive play approachable. Detailed audio design emphasizes metallic footsteps, reactor hums, and explosive impacts, enhancing immersion. Seasonal tournaments and ranked ladders keep competition fresh with rotating maps and limited-time challenges. Battlefield Mechs Online blends tactical teamwork with satisfying mech combat, offering depth for strategists and adrenaline for action fans alike.",
+    "ratings": "4.3",
+    "developer": "IronClad Digital"
+  },
+  {
+    "id": "13",
+    "title": "Farmstead Life Stories",
+    "coverPhoto": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6",
+    "category": "Casual Simulation",
+    "downloadLink": "https://example.com/farmstead",
+    "description": "Farmstead Life Stories focuses on calm, heartfelt gameplay centered around rebuilding an old family farm. Players plant crops, raise animals, and restore buildings, gradually transforming a neglected property into a thriving homestead. Relationships with neighbors evolve through conversations, festivals, and shared projects. Each season introduces new activities, weather patterns, and thematic events. Crafting systems allow creation of furniture, recipes, and decorations that personalize the farmhouse. Quests emphasize kindness and cooperation rather than competition, making the experience soothing and welcoming. A gentle soundtrack and soft color palette reinforce the cozy atmosphere. Optional challenges such as market contests and rare crop breeding offer deeper goals for players who enjoy optimization. The narrative highlights themes of community, tradition, and finding purpose in simple routines. Farmstead Life Stories provides a relaxing escape that rewards patience, creativity, and connection.",
+    "ratings": "4.7",
+    "developer": "WarmField Games"
+  },
+  {
+    "id": "14",
+    "title": "Neon Runner Dash",
+    "coverPhoto": "https://images.unsplash.com/photo-1547658719-da2b51169166",
+    "category": "Endless Runner",
+    "downloadLink": "https://example.com/neon-runner",
+    "description": "Neon Runner Dash delivers fast-paced arcade excitement set in a futuristic city glowing with vibrant colors and pulsing lights. Players control a sleek runner sprinting across rooftops, sliding under obstacles, and leaping over gaps while the speed steadily increases. Power-ups such as magnet boosts, shields, and slow-motion time help extend runs and rack up impressive scores. The controls are simple to learn yet require quick reactions and good timing to master. Daily missions, leaderboards, and seasonal challenges provide constant reasons to return. Unlockable characters and trail effects let players customize their style. The synthwave soundtrack matches the rhythm of gameplay, making each run feel energetic and satisfying. Short sessions make it ideal for mobile play, while long-term progression keeps competitive players motivated. Neon Runner Dash captures the essence of classic endless runners while presenting a stylish, modern twist.",
+    "ratings": "4.2",
+    "developer": "PulseArc Studio"
+  },
+  {
+    "id": "15",
+    "title": "Dungeon Tactics Heroes",
+    "coverPhoto": "https://images.unsplash.com/photo-1503376780353-7e6692767b70",
+    "category": "Turn-Based RPG",
+    "downloadLink": "https://example.com/dungeon-tactics",
+    "description": "Dungeon Tactics Heroes challenges players to guide a team of adventurers through labyrinthine dungeons filled with traps, monsters, and treasure. Combat unfolds in turn-based fashion, rewarding clever positioning and ability synergy over brute force. Each hero class—from shield-bearing guardian to elemental mage—features unique skill trees that support varied strategies. Exploration reveals hidden rooms, lore tablets, and branching paths that affect rewards. Resource management is crucial: players must balance healing, equipment durability, and limited supplies while pushing deeper underground. Boss encounters demand careful preparation and adaptability. Outside of combat, a central hub town grows as players invest in shops, training halls, and guild services. Narrative decisions determine which factions aid or oppose the heroes. Randomized dungeon layouts keep runs unpredictable and replayable. Dungeon Tactics Heroes blends classic tactical depth with modern progression systems, offering challenging yet fair gameplay that rewards thoughtful planning.",
+    "ratings": "4.5",
+    "developer": "Obsidian Peak"
+  },
+  {
+    "id": "16",
+    "title": "Sky Kingdom Flight",
+    "coverPhoto": "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3",
+    "category": "Flight Adventure",
+    "downloadLink": "https://example.com/sky-kingdom",
+    "description": "Sky Kingdom Flight invites players to soar across floating islands suspended above the clouds. Pilots control customizable gliders and airships, delivering cargo, rescuing stranded travelers, and racing through wind tunnels carved by ancient storms. Each island features unique cultures, landmarks, and environmental challenges. Realistic yet approachable flight physics emphasize smooth gliding, air currents, and momentum. Upgrades improve wings, engines, and navigation tools, opening access to higher altitudes and secret routes. Story missions uncover the origins of the sky kingdoms and the mysterious energy that keeps them aloft. Gentle combat encounters with sky pirates add excitement without overwhelming exploration. The tranquil soundtrack and expansive vistas create a sense of freedom and relaxation. Sky Kingdom Flight celebrates discovery, encouraging players to take their time and enjoy the beauty of the world.",
+    "ratings": "4.6",
+    "developer": "CloudHarbor Studios"
+  },
+  {
+    "id": "17",
+    "title": "Cyber Detective Files",
+    "coverPhoto": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    "category": "Narrative",
+    "downloadLink": "https://example.com/cyber-detective",
+    "description": "Cyber Detective Files places players in the role of a private investigator working within a neon-soaked metropolis dominated by corporations and advanced AI systems. Gameplay centers on collecting clues, interviewing suspects, hacking databases, and reconstructing events using augmented reality tools. Each case can be solved in multiple ways depending on how thoroughly evidence is examined and which characters are trusted. Choices ripple across later chapters, influencing alliances and story outcomes. Rather than relying heavily on combat, the experience rewards critical thinking, observation, and moral judgment. Voice-acted dialogues and branching conversations deepen immersion. Stylized visuals blend noir shadows with futuristic technology, creating a memorable atmosphere. Side missions reveal human stories hidden beneath the city’s polished surface. Cyber Detective Files delivers a rich narrative adventure for players who enjoy mystery, consequence, and thoughtful storytelling.",
+    "ratings": "4.4",
+    "developer": "NeonNarrative"
+  },
+  {
+    "id": "18",
+    "title": "Ocean Odyssey Quest",
+    "coverPhoto": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+    "category": "Exploration",
+    "downloadLink": "https://example.com/ocean-odyssey",
+    "description": "Ocean Odyssey Quest invites players beneath the waves to study coral reefs, explore shipwrecks, and document rare marine species. Instead of combat, progression focuses on research tasks, photography challenges, and environmental preservation. A submarine base acts as headquarters, where discoveries unlock upgraded equipment such as deeper-diving suits, sonar scanners, and remote drones. Dynamic ecosystems react to player actions—overharvesting resources can damage habitats, while restoration projects bring life back. Narrative missions highlight real-world ocean issues, including pollution and conservation efforts, without feeling preachy. Peaceful sound design and realistic underwater physics create a calming, immersive experience. Optional time trials and treasure hunts provide excitement for competitive players. Ocean Odyssey Quest offers an educational yet engaging journey that celebrates curiosity and respect for nature.",
+    "ratings": "4.5",
+    "developer": "BlueCurrent Games"
+  },
+  {
+    "id": "19",
+    "title": "Galactic Arena Tournaments",
+    "coverPhoto": "https://images.unsplash.com/photo-1511512578047-dfb367046420",
+    "category": "Multiplayer",
+    "downloadLink": "https://example.com/galactic-arena",
+    "description": "Galactic Arena Tournaments pits players against each other in fast, competitive matches across zero-gravity arenas orbiting distant planets. Each character features unique movement abilities, weapons, and support skills that complement team compositions. Matches are short and intense, encouraging quick decisions and rapid adaptation. Rotating modes—capture points, payload escort, and elimination—keep gameplay varied. A fair ranking system measures performance and places players in balanced matches. Cosmetic rewards such as armor styles and emotes let competitors show personality without affecting gameplay. Spectator tools and replay highlights support community tournaments and streaming content. With tight controls, dynamic environments, and regular updates, Galactic Arena Tournaments delivers thrilling multiplayer action designed for both casual and esports-minded players.",
+    "ratings": "4.3",
+    "developer": "OrbitCore"
+  },
+  {
+    "id": "20",
+    "title": "Legends of the Northlands",
+    "coverPhoto": "https://images.unsplash.com/photo-1482192596544-9eb780fc7f66",
+    "category": "Open World RPG",
+    "downloadLink": "https://example.com/northlands",
+    "description": "Legends of the Northlands offers a sprawling open world inspired by snowy mountains, dense forests, and frozen seas. Players assume the role of a wandering warrior seeking truth behind an ancient prophecy. Villages, clans, and rival factions react dynamically to choices made during quests, trading agreements, and diplomatic negotiations. Combat blends heavy melee strikes with elemental magic and tactical dodging. Crafting systems support forging weapons, tailoring cloaks, and brewing survival potions essential for harsh weather conditions. Exploration reveals hidden shrines, mythical beasts, and secrets tied to forgotten gods. Companion characters bring personal storylines and unique combat abilities. The world feels alive with dynamic day-night cycles, wildlife behavior, and seasonal festivals. Legends of the Northlands offers a deep, narrative-driven experience for players who love exploration, meaningful decisions, and epic fantasy adventures.",
+    "ratings": "4.8",
+    "developer": "FrostVale Studios"
+  }
+]

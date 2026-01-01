@@ -1,15 +1,35 @@
 import React from 'react';
 import MyContainer from '../components/MyContainer';
+import Banner from '../components/Banner';
+import Week from '../components/Week';
+import GamesCard from '../components/GamesCard';
+import useGame from '../hooks/useGame';
+import { Link } from 'react-router';
 
 const Home = () => {
+    const { games } = useGame();
+    const featuredGames = games.slice(0, 6);
     return (
         <div>
             <MyContainer>
-                <div className='bg-[url(src/assets/photo-1542751371-adc38448a05e.avif)] bg-cover bg-center bg-no-repeat p-10 h-[600px] bg-black/70 bg-blend-multiply min-h-screen'>
-                    <h1 className='md:text-7xl text-4xl font-bold md:my-15 my-5'>Next-Gen <br></br> FPS Action</h1>
-                    <p className='md:text-2xl text-lg font-semibold text-gray-300'>Experience the thrill of high-stakes battle royale combat.</p>
-                    <button className='btn bg-white text-black mt-5 rounded-2xl font-semibold text-lg p-5'>Browse Now</button>
+                <Banner></Banner>
+                <div className='my-10 space-y-5'>
+                    <div>
+                        <h1>Popular Games</h1>
+                        <p>Top-rated adventures loved by our community.</p>
+                    </div>
+                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mx-5'>
+                        {
+                            featuredGames.map((game) => (
+                                <GamesCard key={game.id} game={game}></GamesCard>
+                            ))
+                        }
+                    </div>
+                    <div className='flex justify-center'>
+                        <Link to={'/browse'} className='btn bg-white text-black font-bold rounded-xl hover:bg-amber-300'>Show All</Link>
+                    </div>
                 </div>
+                <Week></Week>
             </MyContainer>
         </div>
     );

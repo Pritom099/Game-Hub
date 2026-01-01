@@ -5,6 +5,7 @@ import Browse from "../pages/Browse";
 import About from "../pages/About";
 import Signin from "../pages/Signin";
 import Signup from "../pages/Signup";
+import GameDetails from "../pages/GameDetails";
 
 
 export const router = createBrowserRouter([
@@ -31,6 +32,10 @@ export const router = createBrowserRouter([
             {
                 path:'/signup',
                 element:<Signup></Signup>,
+            },
+            {
+                path: '/game/:id',
+                element:<GameDetails></GameDetails>,
             },
         ],
     }
