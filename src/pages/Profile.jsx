@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router';
 
 
 const Profile = () => {
-    const { user, setUser, signoutUserFunc, loading } = useContext(AuthContext);
+    const { user, setUser, signoutUserFunc} = useContext(AuthContext);
     const navigate = useNavigate();
     const handleSignout = () => {
         signoutUserFunc()

@@ -1,4 +1,3 @@
-import React from 'react';
 import MyContainer from '../components/MyContainer';
 import Banner from '../components/Banner';
 import Week from '../components/Week';
@@ -8,7 +7,7 @@ import { Link } from 'react-router';
 
 const Home = () => {
     const { games } = useGame();
-    const featuredGames = games.slice(0, 6);
+    const featuredGames = [...games].sort((a,b) =>b.ratings - a.ratings).slice(0, 6);
     return (
         <div>
             <MyContainer>

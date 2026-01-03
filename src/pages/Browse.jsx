@@ -1,15 +1,25 @@
-import React from 'react';
-import {} from 'react-router';
+import React, { useState } from 'react';
+import { } from 'react-router';
 import GamesCard from '../components/GamesCard';
 import useGame from '../hooks/useGame';
 import LoadingSpinner from '../components/LoadingSpinner';
+import ErrorGames from '../components/ErrorGames';
 
 const Browse = () => {
-    
-    const{games,loading} = useGame();
+    const [search, setSearch] = useState('');
+    const { games, loading } = useGame();
     // console.log(games);
-    if(loading){
+    const term = search.trim().toLocaleLowerCase()
+    const searchedApps = term ? games.filter(product => product.title.toLocaleLowerCase().includes(term)) : games
+
+    if (loading) {
         return <LoadingSpinner></LoadingSpinner>
+    }
+
+    if (!searchedApps.length) {
+        return (
+            <ErrorGames onBack={() => setSearch('')}></ErrorGames>
+        )
     }
     return (
         <div className='min-h-screen p-10 '>
@@ -19,23 +29,32 @@ const Browse = () => {
             </div>
             <div className='flex items-center justify-between'>
                 <div className='my-7'>
-                    <p className='text-xl font-semibold'>Found Your Game !!!</p>
+                    <p className='text-xl font-semibold'>({searchedApps.length}) Games Found</p>
                 </div>
                 <div>
                     <label className="input border-2 border-blue-400">
-                        <input type='search' placeholder="Search Apps" />
+                        <input value={search} onChange={e => setSearch(e.target.value)} type='search' placeholder="Search games" />
                     </label>
                 </div>
             </div>
 
             <div>
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5'>
-                    {
-                        games.map(game => (
-                            <GamesCard key={game.id} game={game}></GamesCard>
-                        ))
-                    }
-                </div>
+                {
+                    loading ? (
+                        <LoadingSpinner></LoadingSpinner>
+                    ) : (
+                        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5'>
+                            {
+                                searchedApps.map(game => (
+                                    <GamesCard key={game.id} game={game}></GamesCard>
+                                ))
+                            }
+                        </div>
+                    )
+                }
+
+
+
             </div>
         </div>
     );
