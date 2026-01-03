@@ -5,6 +5,7 @@ import { Link } from 'react-router';
 import MyLink from './MyLink';
 import { AuthContext } from '../context/AuthContext';
 import { toast } from 'react-toastify';
+import { ClockLoader } from 'react-spinners';
 
 const Navbar = () => {
     const { signoutUserFunc, setUser, loading, user } = useContext(AuthContext);
@@ -33,7 +34,11 @@ const Navbar = () => {
                         <li><MyLink to={"/"}>Home</MyLink></li>
                         <li><MyLink to={"/browse"}>Browse</MyLink></li>
                         <li><MyLink to={"/about"}>About</MyLink></li>
-                        <li><MyLink to={"/profile"}>Profile</MyLink></li>
+                        {
+                            user && (
+                                <li><MyLink to={"/profile"}>Profile</MyLink></li>
+                            )
+                        }
                     </ul>
                 </div>
                 <div className='flex items-center md:ml-6'>
@@ -47,11 +52,16 @@ const Navbar = () => {
                     <li><MyLink to={"/"}>Home</MyLink></li>
                     <li><MyLink to={"/browse"}>Browse</MyLink></li>
                     <li><MyLink to={"/about"}>About</MyLink></li>
-                    <li><MyLink to={"/profile"}>Profile</MyLink></li>
-
+                    {
+                        user && (
+                            <li><MyLink to={"/profile"}>Profile</MyLink></li>
+                        )
+                    }
                 </ul>
             </div>
-            {
+            { 
+                loading ?
+                <ClockLoader color="#e74c3c"></ClockLoader> :
                 user ? (<div className="text-center space-y-3 navbar-end  md:mr-15 ">
 
                     {/* change popover-1 and --anchor-1 names. Use unique names for each dropdown */}
@@ -67,11 +77,11 @@ const Navbar = () => {
                         <p className="text-black font-semibold">{user?.email}</p>
                         <button onClick={handleSignout} className="btn border">Sign Out</button>
                     </div>
-                </div>) : 
-                <div className="navbar-end gap-4 md:mr-13">
-                    <Link to={'/signin'} className='btn bg-white text-black p-4 rounded-xl font-bold'>Login</Link>
-                    <Link to={'/signup'} className='btn bg-white text-black p-4 rounded-xl font-bold'>Register</Link>
-                </div>
+                </div>) :
+                    <div className="navbar-end gap-4 md:mr-13">
+                        <Link to={'/signin'} className='btn bg-white text-black p-4 rounded-xl font-bold'>Login</Link>
+                        <Link to={'/signup'} className='btn bg-white text-black p-4 rounded-xl font-bold'>Register</Link>
+                    </div>
             }
 
         </MyContainer>

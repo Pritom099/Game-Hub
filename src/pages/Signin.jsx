@@ -11,6 +11,7 @@ const Signin = () => {
     const { signInWithEmailAndPasswordFunc, signInWithEmailFunc, signInWithGithubFunc, user, setUser, sendPassResetEmailFunc, setLoading } = useContext(AuthContext);
 
     const location = useLocation();
+    const form = location.state || "/";
     const navigate = useNavigate();
     console.log(location);
 
@@ -36,6 +37,7 @@ const Signin = () => {
                 }
                 setUser(res.user)
                 toast.success("Signin Successful");
+                navigate(form)
             })
             .catch((e) => {
                 console.log(e);
@@ -47,7 +49,9 @@ const Signin = () => {
         signInWithEmailFunc()
             .then((res) => {
                 console.log(res);
+                setLoading(false)
                 setUser(res.user)
+                navigate(form)
                 toast.success("Signin Successful");
             })
             .catch((e) => {
@@ -60,7 +64,9 @@ const Signin = () => {
         signInWithGithubFunc()
             .then((res) => {
                 console.log(res);
+                setLoading(false)
                 setUser(res.user)
+                navigate(form)
                 toast.success("Signin Successful");
             })
             .catch((e) => {
