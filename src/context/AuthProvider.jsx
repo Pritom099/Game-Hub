@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { AuthContext } from './AuthContext';
-import { createUserWithEmailAndPassword, GithubAuthProvider, GoogleAuthProvider, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from 'firebase/auth';
+import { createUserWithEmailAndPassword, GithubAuthProvider, GoogleAuthProvider, onAuthStateChanged, sendEmailVerification, sendPasswordResetEmail, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from 'firebase/auth';
 import { auth } from '../firebase/firebase.config';
 
 const googleprovider = new GoogleAuthProvider();
@@ -22,22 +22,34 @@ const AuthProvider = ({ children }) => {
         });
     };
 
+    const sendEmailVerificationFunc = () => {
+        setLoading(true)
+        return sendEmailVerification(auth.currentUser);
+    };
+
     const signInWithEmailAndPasswordFunc = (email, password) => {
+        setLoading(true)
         return signInWithEmailAndPassword(auth, email, password)
     };
 
     const signInWithEmailFunc = () => {
+        setLoading(true)
         return signInWithPopup(auth, googleprovider)
     };
 
     const signInWithGithubFunc = () => {
+        setLoading(true)
         return signInWithPopup(auth, githubprovider)
     };
 
-     const signoutUserFunc = () => {
+    const signoutUserFunc = () => {
         setLoading(true)
         return signOut(auth)
     };
+    const sendPassResetEmailFunc = (email) => {
+        setLoading(true)
+        return sendPasswordResetEmail(auth, email)
+    }
 
     const authInfo = {
         user,
@@ -49,8 +61,21 @@ const AuthProvider = ({ children }) => {
         signInWithEmailFunc,
         signInWithGithubFunc,
         signoutUserFunc,
-        updateProfileFunc, 
+        updateProfileFunc,
+        sendEmailVerificationFunc,
+        sendPassResetEmailFunc,
     }
+
+    useEffect(() => {
+        const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+            console.log(currentUser);
+            setUser(currentUser)
+            setLoading(false);
+        });
+        return () => {
+            unsubscribe();
+        }
+    }, [])
 
 
     return <AuthContext value={authInfo}>{children}</AuthContext>

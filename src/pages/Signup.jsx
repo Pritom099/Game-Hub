@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import MyContainer from '../components/MyContainer';
-import { Link } from 'react-router';
+import { Link, useNavigate } from 'react-router';
 import { toast } from 'react-toastify';
 import { AuthContext } from '../context/AuthContext';
 import { FaEye } from 'react-icons/fa';
@@ -8,8 +8,8 @@ import { IoEyeOff } from 'react-icons/io5';
 
 const Signup = () => {
     const [show, setShow] = useState(false);
-    const { createUserWithEmailAndPasswordFunc, setUser, updateProfileFunc } = useContext(AuthContext);
-
+    const { createUserWithEmailAndPasswordFunc, setUser, updateProfileFunc, sendEmailVerificationFunc, signoutUserFunc, setLoading } = useContext(AuthContext);
+    const navigate = useNavigate();
     const handleSignUp = (e) => {
         e.preventDefault();
         const displayName = e.target.name?.value;
@@ -30,14 +30,26 @@ const Signup = () => {
                 updateProfileFunc(displayName, photoURL)
                     .then(() => {
                         console.log(res);
-                        setUser(res.user)
-                        toast.success("Signup Successful.");
+                        sendEmailVerificationFunc()
+                            .then((res) => {
+                                console.log(res);
+                                setLoading(false);
+                            })
+                        signoutUserFunc()
+                            .then(() => {
+                                toast.success("Signup Successful. Check your email to active your account.");
+                                setUser(null);
+                                navigate("/signin");
+                            })
+                            .catch((e) => {
+                                toast.error(e.message);
+                            })
                     })
                     .catch((e) => {
                         console.log(e);
                         toast.error(e.message);
                     })
-               
+
             })
             .catch((e) => {
                 console.log(e);

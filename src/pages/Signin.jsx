@@ -1,6 +1,6 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useRef, useState } from 'react';
 import MyContainer from '../components/MyContainer';
-import { Link } from 'react-router';
+import { Link, useLocation, useNavigate } from 'react-router';
 import { AuthContext } from '../context/AuthContext';
 import { toast } from 'react-toastify';
 import { FaEye } from 'react-icons/fa';
@@ -8,7 +8,17 @@ import { IoEyeOff } from 'react-icons/io5';
 
 const Signin = () => {
     const [show, setShow] = useState(false);
-    const { signInWithEmailAndPasswordFunc, signInWithEmailFunc, signInWithGithubFunc, setUser } = useContext(AuthContext);
+    const { signInWithEmailAndPasswordFunc, signInWithEmailFunc, signInWithGithubFunc, user, setUser, sendPassResetEmailFunc, setLoading } = useContext(AuthContext);
+
+    const location = useLocation();
+    const navigate = useNavigate();
+    console.log(location);
+
+    if (user) {
+        navigate("/")
+        return;
+    }
+    const emailRef = useRef(null)
 
     const handleSignin = (e) => {
         e.preventDefault();
@@ -19,6 +29,11 @@ const Signin = () => {
         signInWithEmailAndPasswordFunc(email, password)
             .then((res) => {
                 console.log(res);
+                setLoading(false);
+                if (!res.user?.emailVerified) {
+                    toast.error("Your email is not verified");
+                    return;
+                }
                 setUser(res.user)
                 toast.success("Signin Successful");
             })
@@ -54,6 +69,19 @@ const Signin = () => {
             })
     }
 
+    const handleForgetPassword = (e) => {
+        e.preventDefault();
+        const email = emailRef.current.value;
+        sendPassResetEmailFunc(email)
+            .then((res) => {
+                console.log(res)
+                setLoading(false)
+                toast.success("Check your email to reset password");;
+            }).catch(e => {
+                toast.error(e.message);
+            })
+    }
+
 
     return (
         <MyContainer>
@@ -78,6 +106,7 @@ const Signin = () => {
                             <input
                                 type="email"
                                 name="email"
+                                ref={emailRef}
                                 placeholder="example@email.com"
                                 className="input input-bordered w-full bg-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-pink-400"
                             />
@@ -98,7 +127,7 @@ const Signin = () => {
                             </span>
 
                         </div>
-                        <button className="hover:underline cursor-pointer" type="button">Forget password ?</button>
+                        <button onClick={handleForgetPassword} className="hover:underline cursor-pointer" type="button">Forget password ?</button>
 
                         <button type="submit" className="my-btn">
                             Sign In
