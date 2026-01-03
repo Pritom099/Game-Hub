@@ -14,9 +14,9 @@ const Home = () => {
             <MyContainer>
                 <Banner></Banner>
                 <div className='my-10 space-y-5'>
-                    <div>
-                        <h1>Popular Games</h1>
-                        <p>Top-rated adventures loved by our community.</p>
+                    <div className='space-y-3 ml-10'>
+                        <h1 className='font-bold text-4xl'>Popular Games</h1>
+                        <p className='text-gray-300'>Top-rated adventures loved by our community.</p>
                     </div>
                     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mx-5'>
                         {

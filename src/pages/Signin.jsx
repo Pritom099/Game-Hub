@@ -1,8 +1,60 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
 import MyContainer from '../components/MyContainer';
 import { Link } from 'react-router';
+import { AuthContext } from '../context/AuthContext';
+import { toast } from 'react-toastify';
+import { FaEye } from 'react-icons/fa';
+import { IoEyeOff } from 'react-icons/io5';
 
 const Signin = () => {
+    const [show, setShow] = useState(false);
+    const { signInWithEmailAndPasswordFunc, signInWithEmailFunc, signInWithGithubFunc, setUser } = useContext(AuthContext);
+
+    const handleSignin = (e) => {
+        e.preventDefault();
+        const email = e.target.email?.value;
+        const password = e.target.password?.value;
+        console.log(email, password)
+
+        signInWithEmailAndPasswordFunc(email, password)
+            .then((res) => {
+                console.log(res);
+                setUser(res.user)
+                toast.success("Signin Successful");
+            })
+            .catch((e) => {
+                console.log(e);
+                toast.error(e.message);
+            })
+    }
+
+    const handleGoogleSignin = () => {
+        signInWithEmailFunc()
+            .then((res) => {
+                console.log(res);
+                setUser(res.user)
+                toast.success("Signin Successful");
+            })
+            .catch((e) => {
+                console.log(e);
+                toast.error(e.message);
+            })
+    }
+
+    const handleGithubSignin = () => {
+        signInWithGithubFunc()
+            .then((res) => {
+                console.log(res);
+                setUser(res.user)
+                toast.success("Signin Successful");
+            })
+            .catch((e) => {
+                console.log(e);
+                toast.error(e.message);
+            })
+    }
+
+
     return (
         <MyContainer>
             <div className="relative z-10 flex flex-col md:flex-row items-center justify-between mx-25 gap-10 p-6 lg:p-10 text-white">
@@ -20,7 +72,7 @@ const Signin = () => {
                         Sign in
                     </h2>
 
-                    <form className="space-y-4">
+                    <form onSubmit={handleSignin} className="space-y-4">
                         <div>
                             <label className="block text-sm font-medium mb-1">Email</label>
                             <input
@@ -36,11 +88,14 @@ const Signin = () => {
                                 Password
                             </label>
                             <input
-                                type='text'
+                                type={show ? "text" : "password"}
                                 name="password"
                                 placeholder="••••••••"
                                 className="input input-bordered w-full bg-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-pink-400"
                             />
+                            <span onClick={() => setShow(!show)} className="absolute right-[8px] top-[36px] cursor-pointer z-50">
+                                {show ? <FaEye></FaEye> : <IoEyeOff></IoEyeOff>}
+                            </span>
 
                         </div>
                         <button className="hover:underline cursor-pointer" type="button">Forget password ?</button>
@@ -69,6 +124,7 @@ const Signin = () => {
                         {/* Google Signin */}
                         <button
                             type="button"
+                            onClick={handleGoogleSignin}
                             className="flex items-center justify-center gap-3 bg-white text-gray-800 px-5 py-2 rounded-lg w-full font-semibold hover:bg-gray-100 transition-colors cursor-pointer"
                         >
                             <img
@@ -81,6 +137,7 @@ const Signin = () => {
                         {/* Github Signin */}
                         {<button
                             type="button"
+                            onClick={handleGithubSignin}
                             className="flex items-center justify-center gap-3 bg-white text-gray-800 px-5 py-2 rounded-lg w-full font-semibold hover:bg-gray-100 transition-colors cursor-pointer"
                         >
                             <img

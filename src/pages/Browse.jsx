@@ -2,11 +2,15 @@ import React from 'react';
 import {} from 'react-router';
 import GamesCard from '../components/GamesCard';
 import useGame from '../hooks/useGame';
+import LoadingSpinner from '../components/LoadingSpinner';
 
 const Browse = () => {
     
-    const{games} = useGame();
+    const{games,loading} = useGame();
     // console.log(games);
+    if(loading){
+        return <LoadingSpinner></LoadingSpinner>
+    }
     return (
         <div className='min-h-screen p-10 '>
             <div className='flex flex-col  items-center '>

@@ -1,11 +1,15 @@
 import React from 'react';
 import useGame from '../hooks/useGame';
 import { useParams } from 'react-router';
+import LoadingSpinner from '../components/LoadingSpinner';
 
 const GameDetails = () => {
     const {id} = useParams();
-    const {games} = useGame();
+    const {games, loading} = useGame();
     const game = games.find( p => String(p.id) === id);
+
+    if (loading) return <LoadingSpinner></LoadingSpinner>
+    
     const{coverPhoto, title,developer,downloadLink,category,  ratings,description} = game || {}
     return (
         <div className='min-h-screen p-15'>

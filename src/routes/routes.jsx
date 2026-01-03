@@ -6,6 +6,7 @@ import About from "../pages/About";
 import Signin from "../pages/Signin";
 import Signup from "../pages/Signup";
 import GameDetails from "../pages/GameDetails";
+import Profile from "../pages/Profile";
 
 
 export const router = createBrowserRouter([
@@ -24,6 +25,10 @@ export const router = createBrowserRouter([
             {
                 path:'/about',
                 element:<About></About>,
+            },
+            {
+                path:'/profile',
+                element:<Profile></Profile>,
             },
             {
                 path: '/signin',
